@@ -1,0 +1,24 @@
+[package]
+name = "chainsights_client"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.98"
+base64 = "0.22.1"
+clap = { version = "4.5.37", features = ["derive"] }
+futures = "0.3.31"
+hex = "0.4.3"
+hickory-resolver = "0.25.1"
+packageurl = "0.4.2"
+pem = "3.0.5"
+reqwest = { version = "0.12.15", features = ["json"] }
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+sha2 = "0.10.8"
+sigstore = "0.11.0"
+tokio = { version = "1.44.2", features = ["full"] }
+x509-parser = "0.17.0"
+
+[dev-dependencies]
+wiremock = "0.6.3"

@@ -1,0 +1,26 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "subject": [
+    {
+      "uri": "pkg:chainsights/whiskey.foundation",
+      "digest": {
+        "sha256": "823dba926f0df95090bff6623eee44edc6074608971bd8acec37839e2f7ef1c3"
+      }
+    }
+  ],
+  "predicateType": "https://chainsights.rest/catalog/v1",
+  "predicate": {
+    "timestamp": "2025-04-20T05:05:22Z",
+    "components": [
+      {
+        "name": "WTF Frontend",
+        "description": "The frontend for the Whiskey Tasting Foundation.",
+        "componentPurl": "pkg:npm/whiskey-foundation/frontend",
+        "componentAttestationLink": {
+            "uri": "https://raw.githubusercontent.com/whiskeytastingfoundation/chainsights/refs/heads/main/components/wtf-frontend.jsonl",
+            "expectedSignerIdentity": "mlieberman85@gmail.com"
+        }
+      }
+    ]
+  }
+}

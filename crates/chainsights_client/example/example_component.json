@@ -1,0 +1,35 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "subject": [
+    {
+      "uri": "pkg:chainsights/whiskey.foundation/wtf-frontend",
+      "digest": {
+        "sha256": "440a0b06af70f8c6caf028946961401cea8881e603eacc4ac31b808ec312e30f"
+      }
+    }
+  ],
+  "predicateType": "https://chainsights.rest/component/v1",
+  "predicate": {
+    "timestamp": "2025-04-20T05:05:22Z",
+    "purl": "pkg:generic/whiskey.foundation/wtf-frontend",
+    "name": "WTF Frontend",
+    "repositories": [
+      {
+        "repoType": "git",
+        "uri": "https://github.com/whiskeytastingfoundation/wtf-frontend"
+      }
+    ],
+    "releaseAttestations": [
+      {
+        "uri": "https://raw.githubusercontent.com/whiskeytastingfoundation/chainsights/refs/heads/main/components/wtf-frontend/0.1.jsonl",
+        "expectedSignerIdentity": "mlieberman85@gmail.com"
+      }
+    ],
+    "metadataLinks": [
+      {
+        "uri": "https://raw.githubusercontent.com/whiskeytastingfoundation/chainsights/refs/heads/main/components/wtf-frontend/attestations/baseline.jsonl",
+        "mediaType": "application/in-toto+json"
+      }
+    ]
+  }
+}

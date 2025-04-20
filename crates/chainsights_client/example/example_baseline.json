@@ -1,0 +1,108 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "subject": [
+    {
+      "uri": "pkg:chainsights/whiskey.foundation/wtf-frontend",
+      "digest": {
+        "sha256": "440a0b06af70f8c6caf028946961401cea8881e603eacc4ac31b808ec312e30f"
+      }
+    }
+  ],
+  "predicateType": "https://baseline.openssf.org/attestation/manual",
+  "predicate": {
+    "verifiedTimestamp": "2025-04-22T11:00:00Z",
+    "verifier": {
+      "id": "mailto:mlieberman85@gmail.com",
+      "comment": "Automated scan + manual review based on internal checklist #789"
+    },
+    "assessmentComment": "Full Self-Assessment for OpenSSF Security Baseline for WTF Frontend",
+    "controls": [
+      { "control": "OSPS-AC-01.01", "implemented": false },
+      { "control": "OSPS-AC-02.01", "implemented": true },
+      { "control": "OSPS-AC-03.01", "implemented": true },
+      { "control": "OSPS-AC-03.02", "implemented": true },
+      { "control": "OSPS-BR-01.01", "implemented": true },
+      { "control": "OSPS-BR-01.02", "implemented": true },
+      { "control": "OSPS-BR-03.01", "implemented": true },
+      { "control": "OSPS-BR-03.02", "implemented": true },
+      { "control": "OSPS-DO-01.01", "implemented": true },
+      { "control": "OSPS-DO-02.01", "implemented": true },
+      { "control": "OSPS-GV-02.01", "implemented": true },
+      { "control": "OSPS-GV-03.01", "implemented": true },
+      { "control": "OSPS-LE-02.01", "implemented": true },
+      { "control": "OSPS-LE-02.02", "implemented": true },
+      { "control": "OSPS-LE-03.01", "implemented": true },
+      { "control": "OSPS-LE-03.02", "implemented": true },
+      { "control": "OSPS-QA-01.01", "implemented": true },
+      { "control": "OSPS-QA-01.02", "implemented": true },
+      {
+        "control": "OSPS-QA-02.01",
+        "implemented": true,
+        "evidence": [
+          {
+            "description": "Package manifest file (e.g., package.json) present in repo root."
+          }
+        ]
+      },
+      { "control": "OSPS-QA-04.01", "implemented": true },
+      { "control": "OSPS-QA-05.01", "implemented": true },
+      { "control": "OSPS-QA-05.02", "implemented": true },
+      { "control": "OSPS-VM-02.01", "implemented": true, "evidence": [
+        { 
+            "uri": "https://github.com/whiskeytastingfoundation/wtf-frontend/blob/main/SECURITY.md",
+            "mediaType": "text/markdown",
+            "description": "Security policy document available in the repository."
+        }
+      ] },
+      { "control": "OSPS-AC-04.01", "implemented": true },
+      { "control": "OSPS-BR-02.01", "implemented": true },
+      { "control": "OSPS-BR-04.01", "implemented": true },
+      { "control": "OSPS-BR-05.01", "implemented": true },
+      { "control": "OSPS-BR-06.01", "implemented": true },
+      { "control": "OSPS-DO-06.01", "implemented": true },
+      { "control": "OSPS-GV-01.01", "implemented": true },
+      { "control": "OSPS-GV-01.02", "implemented": true },
+      { "control": "OSPS-GV-03.02", "implemented": true },
+      {
+        "control": "OSPS-LE-01.01",
+        "implemented": true,
+        "evidence": [{ "description": "DCO check enforced via CI." }]
+      },
+      { "control": "OSPS-QA-03.01", "implemented": true },
+      { "control": "OSPS-QA-06.01", "implemented": true },
+      { "control": "OSPS-SA-01.01", "implemented": true },
+      { "control": "OSPS-SA-02.01", "implemented": true },
+      { "control": "OSPS-SA-03.01", "implemented": false },
+      { "control": "OSPS-VM-01.01", "implemented": true },
+      { "control": "OSPS-VM-03.01", "implemented": true },
+      { "control": "OSPS-VM-04.01", "implemented": true },
+      { "control": "OSPS-AC-04.02", "implemented": true },
+      { "control": "OSPS-BR-02.02", "implemented": true },
+      { "control": "OSPS-DO-03.01", "implemented": true },
+      { "control": "OSPS-DO-03.02", "implemented": true },
+      { "control": "OSPS-DO-04.01", "implemented": true },
+      { "control": "OSPS-DO-05.01", "implemented": true },
+      { "control": "OSPS-GV-04.01", "implemented": true },
+      { "control": "OSPS-QA-02.02", "implemented": true },
+      { "control": "OSPS-QA-04.02", "implemented": true },
+      { "control": "OSPS-QA-06.02", "implemented": true },
+      { "control": "OSPS-QA-06.03", "implemented": true },
+      { "control": "OSPS-QA-07.01", "implemented": true },
+      { "control": "OSPS-SA-03.02", "implemented": false },
+      {
+        "control": "OSPS-VM-04.02",
+        "implemented": true,
+        "evidence": [
+          {
+            "description": "VEX document generated for non-applicable CVEs in dependencies."
+          }
+        ]
+      },
+      { "control": "OSPS-VM-05.01", "implemented": true },
+      { "control": "OSPS-VM-05.02", "implemented": true },
+      { "control": "OSPS-VM-05.03", "implemented": true },
+      { "control": "OSPS-VM-06.01", "implemented": true },
+      { "control": "OSPS-VM-06.02", "implemented": true }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [
+        {
+            "uri": "pkg:chainsights/whiskey.foundation/wtf-frontend@0.1",
+            "digest": {
+                "sha256": "c299fcd89e35d587ad3590b73947ec7046365229e689878b7f9e96497549e7f9"
+            }
+        }
+    ],
+    "predicateType": "https://chainsights.rest/release/v1",
+    "predicate": {
+        "timestamp": "2025-04-20T05:05:22Z",
+        "releaseSchemaVersion": "1.0",
+        "purl": "pkg:generic/whiskey.foundation/wtf-frontend@0.1",
+        "name": "WTF Frontend Cool 0.1 release",
+        "releaseDate": "2025-04-20T05:05:22Z",
+        "metadataLinks": [
+            {
+                "uri": "https://raw.githubusercontent.com/whiskeytastingfoundation/chainsights/refs/heads/main/components/wtf-frontend/0.1/sbom.spdx.json",
+                "mediaType": "application/spdx+json"
+            }
+        ]
+    }
+}
