@@ -4,7 +4,7 @@ Chainsights is a proof-of-concept protocol and client tool for software supply c
 
 **NOTE:** The project is VERY early. It is a working PoC, but there's a lot more to be done before it would be safe and secure for broad use. Both the tool and protocol need a lot more work. We welcome issues, conversations, and collaboration. We plan to also collaborate with existing groups doing similar work like OWASP's Transparency Exchange API. This project is not intended to replace any existing supply chain security focused APIs and architectures but complement them.
 
-This project is currently devloped and maintained by Kusari.
+This project is currently developed and maintained by Kusari.
 
 ## Overview
 

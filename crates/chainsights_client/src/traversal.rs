@@ -12,23 +12,18 @@ pub(crate) async fn traverse_and_aggregate(
     root_uri: &str,
     root_identity: &str,
 ) -> Result<AggregatedCatalogData> {
-    // Can return Err on catastrophic failure (e.g., client creation)
-
-    // (i) Initialization
+    // 1. Initialization
     let client = reqwest::Client::new(); // Create client once
-    // For sequential processing:
     let mut visited_uris = HashSet::new();
-    // For concurrent processing with join_all (more complex):
-    // let visited_uris = Arc::new(Mutex::new(HashSet::new()));
 
     let mut aggregated_data = AggregatedCatalogData::default();
 
-    // (ii) Process Root URI
+    // 2. Process Root URI
     match process_attestation_uri(root_uri, root_identity, &mut visited_uris, 0, &client).await {
         Ok(ChainsightsPredicate::Catalog(catalog)) => {
             aggregated_data.catalog_predicate = Some(catalog.clone()); // Store the root predicate
 
-            // (iii) Recursive Traversal (Sequential Example)
+            // 3. Recursive Traversal
             for component in &catalog.components {
                 let component_uri = &component.component_attestation_link.uri;
                 let component_identity = &component
@@ -152,14 +147,11 @@ pub(crate) async fn traverse_and_aggregate(
                 "Expected Catalog predicate at root URI '{}', but found {:?}",
                 root_uri, other_pred
             ));
-            // Decide whether to return Ok or Err based on requirements. Returning Ok allows showing the error.
         }
         Err(e) => {
             // Failed to process the root URI itself
             aggregated_data.root_error =
                 Some(format!("Failed to process root URI '{}': {}", root_uri, e));
-            // Return Ok with the error stored, or return Err(e) to indicate total failure.
-            // Returning Ok is consistent with aggregating errors.
         }
     }
 
