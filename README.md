@@ -186,11 +186,13 @@ This record should contain:
 
 ## Security Features
 
-All manifests are verified using Sigstore signatures
-Hash verification for non-signed artifacts
-Expected signer identity checking
-Cycle detection to prevent infinite traversal
-Depth limiting to prevent excessive resource usage
+**NOTE**: Some of these aren't implemented very well yet.
+
+- All manifests are verified using Sigstore signatures
+- Hash verification for non-signed artifacts
+- Expected signer identity checking
+- Cycle detection to prevent infinite traversal
+- Depth limiting to prevent excessive resource usage
 
 ## License
 
