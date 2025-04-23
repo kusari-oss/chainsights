@@ -153,6 +153,7 @@ This record should contain:
     ]
   }
 }
+```
 
 ### Release Example
 
